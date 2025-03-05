@@ -1,0 +1,6 @@
+Bundle-Name: custom-saml-user-resolver
+Bundle-SymbolicName: custom.saml.user.resolver
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.mw.custom.saml.user.resolver,\
+	com.mw.custom.saml.user.configuration
