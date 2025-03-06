@@ -15,6 +15,11 @@
 3. Login as an Administrator, go to Control Panel > System Settings > Security > Custom SAML User Resolver, enable 'Override Default Matching Behaviour' and Save.
 4. Test the scenario of logging in as an existing user whose email address has been changed in the IdP but not in Liferay (yet).
 
+## Configuration ##
+- The following configuration file can be used in place of enabling / disabling through the System Settings GUI:
+- File name: com.mw.custom.saml.user.configuration.CustomSamlUserResolverConfiguration.config
+- File content: overrideDefaultMatchingBehaviour=B"true"
+
 ## Notes ##
 1. This is a public repository and is provided as a Proof Of Cencept (POC), as is. 
 2. This customization does not handle the scenario of a users emailAddress AND screenName changing. In that scenario the default bahavious applies e.g. a new user would be created (depending on the Liferay Stranger handling setup).
