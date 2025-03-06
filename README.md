@@ -16,9 +16,11 @@
 4. Test the scenario of logging in as an existing user whose email address has been changed in the IdP but not in Liferay (yet).
 
 ## Configuration ##
-- The following configuration file can be used in place of enabling / disabling through the System Settings GUI:
+- The following configuration file can be used in place of enabling / disabling through the System Settings GUI.
+- For Liferay PaaS the file can be added to the liferay service in the DXP Cloud repository e.g. liferay/configs/dev/osgi/configs or liferay/configs/common/osgi/configs
 - File name: com.mw.custom.saml.user.configuration.CustomSamlUserResolverConfiguration.config
-- File content: overrideDefaultMatchingBehaviour=B"true"
+- File content to enable: overrideDefaultMatchingBehaviour=B"true"
+- File content to disable: overrideDefaultMatchingBehaviour=B"false"
 
 ## Notes ##
 1. This is a public repository and is provided as a Proof Of Cencept (POC), as is. 
