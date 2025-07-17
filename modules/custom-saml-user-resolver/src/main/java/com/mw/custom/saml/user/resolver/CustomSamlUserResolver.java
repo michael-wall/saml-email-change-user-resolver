@@ -45,7 +45,7 @@ import org.osgi.service.component.annotations.Reference;
 
 @Component(
 	immediate = true,
-	property = "serviceranking:Integer=" + (Integer.MIN_VALUE + 1),
+	property = "service.ranking:Integer=" + (Integer.MIN_VALUE + 1),
 	configurationPid = CustomSamlUserResolverConfiguration.PID,
 	service = UserResolver.class
 )
